@@ -8,12 +8,23 @@
 export default {}
 </script>
 
-<style lang="scss" scoped>
-html{
-  background-color: #0ff;
-}
+<style scoped>
+  main{
+    padding: 10rem;
+    background-color: #0ff;
+  }
   h1{
     color: #f00;
-    font-size: 10vw;
+    font-size: 5vw;
+    animation: infinite alternate-reverse 0.2s unco;
   }  
+  @keyframes unco {
+    0%{
+      transform: translateX(500px);
+    }
+    
+    100%{
+      transform: translateX(-500px);
+    }
+  }
 </style>
